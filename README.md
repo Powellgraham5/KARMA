@@ -12,6 +12,46 @@
 
 ---
 
+## For Judges — Verify in 5 Minutes
+
+**Live app:** [karma-protocol-app.vercel.app](https://karma-protocol-app.vercel.app)
+
+### 1. See karma scores live
+Go to [/lookup](https://karma-protocol-app.vercel.app/lookup) and try one of these addresses:
+
+| Wallet | Expected karma | Expected fee |
+|--------|---------------|--------------|
+| `0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65` | 90 (Elite) | 0.01% |
+| `0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC` | 10 (Bronze) | 0.10% |
+| `0x90F79bf6EB2c4f870365E785982E1f101E93b906` | 0 (Newcomer) | 0.20% |
+
+Scores are read **live from the on-chain registry** — no backend, no database.
+
+### 2. Verify the contracts on-chain
+
+| Contract | Address | Explorer |
+|----------|---------|---------|
+| KarmaRegistry | `0x1D13fF25b10C9a6741DFdce229073bed652197c7` | [OKLink ↗](https://www.oklink.com/xlayer-test/address/0x1D13fF25b10C9a6741DFdce229073bed652197c7) |
+| KarmaHook | `0x8520437A994BeC0C3b1fE3EbB3F52CF514698080` | [OKLink ↗](https://www.oklink.com/xlayer-test/address/0x8520437A994BeC0C3b1fE3EbB3F52CF514698080) |
+
+### 3. Run the tests
+
+```bash
+git clone https://github.com/Powellgraham5/Karma-protocol
+cd Karma-protocol/contracts
+forge install
+
+# 72 unit tests — no network required
+forge test --no-match-path "*Fork*" -v
+
+# 3 fork tests — proves hook works on the REAL Uniswap V4 PoolManager (Base Sepolia)
+forge test --match-path "test/KarmaHookFork.t.sol" --fork-url https://sepolia.base.org -vv
+```
+
+Expected: **75/75 tests pass**.
+
+---
+
 ## Overview
 
 Karma Protocol is a production-grade Uniswap V4 Hook that applies **dynamic swap fees based on a wallet's on-chain reputation score**. An autonomous AI agent runs every 60 seconds, computing a 0–100 karma score for every wallet that has interacted with the protocol, and writing those scores to an immutable on-chain registry.
