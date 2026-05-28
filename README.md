@@ -10,6 +10,7 @@
 [![Tests](https://img.shields.io/badge/Tests-75%2F75%20Passing-success?style=flat-square&logo=github)](https://github.com/Powellgraham5/Karma-protocol/actions)
 [![Chain](https://img.shields.io/badge/Chain-X%20Layer%20Testnet%201952-blue?style=flat-square)](https://www.oklink.com/xlayer-test)
 [![License](https://img.shields.io/badge/License-MIT-gray?style=flat-square)](LICENSE)
+[![X](https://img.shields.io/badge/X-@karmaprotocol__-black?style=flat-square&logo=x)](https://x.com/karmaprotocol_)
 
 ---
 
