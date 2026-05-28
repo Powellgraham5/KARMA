@@ -174,7 +174,7 @@ forge test --match-path "test/KarmaHookFork.t.sol" --fork-url https://sepolia.ba
 ### Run the agent locally
 ```bash
 cd agent
-cp .env.example .env   # fill in AGENT_PRIVATE_KEY
+touch .env              # add AGENT_PRIVATE_KEY and RPC_URL_PRIMARY
 npm install
 npm run dev
 ```

@@ -452,7 +452,7 @@ cd KARMA
 cd contracts && forge install && forge test -vv
 
 # Agent
-cd ../agent && npm install && cp .env.example .env && npm run dev
+cd ../agent && npm install && npm run dev
 
 # Frontend
 cd ../frontend && npm install && npm run dev
