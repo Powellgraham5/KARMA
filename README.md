@@ -4,10 +4,11 @@
 
 > *Your on-chain reputation earns you cheaper trades.*
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-karma--protocol--app.vercel.app-cyan?style=flat-square)](https://karma-protocol-app.vercel.app)
-[![Chain](https://img.shields.io/badge/Chain-X%20Layer%20Testnet%201952-brightgreen?style=flat-square)](https://www.oklink.com/xlayer-test)
-[![Hook](https://img.shields.io/badge/KarmaHook-V4%20beforeSwap-purple?style=flat-square)](#contracts)
-[![Agent](https://img.shields.io/badge/Agent-Railway%2024%2F7-blue?style=flat-square)](#autonomous-agent)
+[![Live App](https://img.shields.io/badge/Live%20App-karma--protocol--app.vercel.app-cyan?style=flat-square&logo=vercel)](https://karma-protocol-app.vercel.app)
+[![Judge Guide](https://img.shields.io/badge/Judge%20Guide-JUDGE__GUIDE.md-orange?style=flat-square)](./JUDGE_GUIDE.md)
+[![Wallet Lookup](https://img.shields.io/badge/Wallet%20Lookup-No%20Wallet%20Needed-brightgreen?style=flat-square)](https://karma-protocol-app.vercel.app/lookup)
+[![Tests](https://img.shields.io/badge/Tests-75%2F75%20Passing-success?style=flat-square&logo=github)](https://github.com/Powellgraham5/Karma-protocol/actions)
+[![Chain](https://img.shields.io/badge/Chain-X%20Layer%20Testnet%201952-blue?style=flat-square)](https://www.oklink.com/xlayer-test)
 [![License](https://img.shields.io/badge/License-MIT-gray?style=flat-square)](LICENSE)
 
 ---
